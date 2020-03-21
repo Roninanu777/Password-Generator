@@ -10,12 +10,12 @@
 <body>
     <div class="container">
         <h1 class="title">Password Generator</h1>
-        <div class="passwd"><h3>password</h3></div>
-        <form class="form-container">
+        <div class="passwd"><h3 id="passwd-display">password</h3></div>
+        <form id="passwordGeneratorForm" class="form-container">
             <label for="">Number of Characters</label>
-            <div>
-                <input type="range" min="1" max="50" id="characterAmountRange">
-                <input type="number" min="1" max="50" id="characterAmountNumber">
+            <div class="range-input">
+                <input style="outline: none" type="range" min="1" max="50" id="characterAmountRange">
+                <input style="outline: none" type="number" min="1" max="50" id="characterAmountNumber">
             </div>
             
             <label for="includeUppercase">Include Uppercase</label>
